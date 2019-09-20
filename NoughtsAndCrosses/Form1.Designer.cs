@@ -51,13 +51,14 @@
             // 
             // pcbOne
             // 
-            this.pcbOne.Image = ((System.Drawing.Image)(resources.GetObject("pcbOne.Image")));
+            this.pcbOne.Image = global::NoughtsAndCrosses.Properties.Resources.cover;
             this.pcbOne.Location = new System.Drawing.Point(0, 0);
             this.pcbOne.MaximumSize = new System.Drawing.Size(200, 200);
             this.pcbOne.Name = "pcbOne";
             this.pcbOne.Size = new System.Drawing.Size(200, 200);
             this.pcbOne.TabIndex = 0;
             this.pcbOne.TabStop = false;
+            this.pcbOne.Click += new System.EventHandler(this.PcbOne_Click);
             // 
             // pcbTwo
             // 
@@ -68,6 +69,7 @@
             this.pcbTwo.Size = new System.Drawing.Size(200, 200);
             this.pcbTwo.TabIndex = 1;
             this.pcbTwo.TabStop = false;
+            this.pcbTwo.Click += new System.EventHandler(this.PcbTwo_Click);
             // 
             // pcbThree
             // 
@@ -78,6 +80,7 @@
             this.pcbThree.Size = new System.Drawing.Size(200, 200);
             this.pcbThree.TabIndex = 2;
             this.pcbThree.TabStop = false;
+            this.pcbThree.Click += new System.EventHandler(this.PcbThree_Click);
             // 
             // pcbFour
             // 
@@ -88,6 +91,7 @@
             this.pcbFour.Size = new System.Drawing.Size(200, 200);
             this.pcbFour.TabIndex = 3;
             this.pcbFour.TabStop = false;
+            this.pcbFour.Click += new System.EventHandler(this.PcbFour_Click);
             // 
             // pcbFive
             // 
@@ -98,6 +102,7 @@
             this.pcbFive.Size = new System.Drawing.Size(200, 200);
             this.pcbFive.TabIndex = 4;
             this.pcbFive.TabStop = false;
+            this.pcbFive.Click += new System.EventHandler(this.PcbFive_Click);
             // 
             // pcbSix
             // 
@@ -108,6 +113,7 @@
             this.pcbSix.Size = new System.Drawing.Size(200, 200);
             this.pcbSix.TabIndex = 5;
             this.pcbSix.TabStop = false;
+            this.pcbSix.Click += new System.EventHandler(this.PcbSix_Click);
             // 
             // pcbSeven
             // 
@@ -118,6 +124,7 @@
             this.pcbSeven.Size = new System.Drawing.Size(200, 200);
             this.pcbSeven.TabIndex = 6;
             this.pcbSeven.TabStop = false;
+            this.pcbSeven.Click += new System.EventHandler(this.PcbSeven_Click);
             // 
             // pcbEight
             // 
@@ -128,6 +135,7 @@
             this.pcbEight.Size = new System.Drawing.Size(200, 200);
             this.pcbEight.TabIndex = 7;
             this.pcbEight.TabStop = false;
+            this.pcbEight.Click += new System.EventHandler(this.PcbEight_Click);
             // 
             // pcbNine
             // 
@@ -138,6 +146,7 @@
             this.pcbNine.Size = new System.Drawing.Size(200, 200);
             this.pcbNine.TabIndex = 8;
             this.pcbNine.TabStop = false;
+            this.pcbNine.Click += new System.EventHandler(this.PcbNine_Click);
             // 
             // MainForm
             // 
@@ -159,8 +168,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Noughts And Crosses";
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.Click += new System.EventHandler(this.MainForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pcbOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbThree)).EndInit();
