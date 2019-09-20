@@ -32,14 +32,17 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::NoughtsAndCrosses.Properties.Resources.NoughtsAndCrosses;
-            this.ClientSize = new System.Drawing.Size(1921, 1024);
+            this.BackgroundImage = global::NoughtsAndCrosses.Properties.Resources.noughts;
+            this.ClientSize = new System.Drawing.Size(584, 561);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainForm";
             this.Text = "Noughts And Crosses";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Click += new System.EventHandler(this.MainForm_Click);
             this.ResumeLayout(false);
 
         }

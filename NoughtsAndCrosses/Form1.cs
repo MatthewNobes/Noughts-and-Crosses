@@ -21,5 +21,18 @@ namespace NoughtsAndCrosses
         {
 
         }
+
+        private void MainForm_Click(object sender, EventArgs e)
+        {
+            
+
+            this.Cursor = new Cursor(Cursor.Current.Handle);
+            
+
+            if (Cursor.Position.X <=275)
+            {
+                MessageBox.Show("hello");
+            }
+        }
     }
 }
