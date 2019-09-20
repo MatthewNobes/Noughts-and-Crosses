@@ -29,7 +29,7 @@ namespace NoughtsAndCrosses
             this.Cursor = new Cursor(Cursor.Current.Handle);
             
 
-            if (Cursor.Position.X <=275)
+            if (Cursor.Position.X <=300)
             {
                 MessageBox.Show("hello");
             }
