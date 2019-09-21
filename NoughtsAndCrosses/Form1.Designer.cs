@@ -51,6 +51,7 @@
             // 
             // pcbOne
             // 
+            this.pcbOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbOne.Image = global::NoughtsAndCrosses.Properties.Resources.cover;
             this.pcbOne.Location = new System.Drawing.Point(0, 0);
             this.pcbOne.MaximumSize = new System.Drawing.Size(200, 200);
@@ -62,6 +63,7 @@
             // 
             // pcbTwo
             // 
+            this.pcbTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbTwo.Image = ((System.Drawing.Image)(resources.GetObject("pcbTwo.Image")));
             this.pcbTwo.Location = new System.Drawing.Point(200, 0);
             this.pcbTwo.MaximumSize = new System.Drawing.Size(200, 200);
@@ -73,6 +75,7 @@
             // 
             // pcbThree
             // 
+            this.pcbThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbThree.Image = ((System.Drawing.Image)(resources.GetObject("pcbThree.Image")));
             this.pcbThree.Location = new System.Drawing.Point(400, 0);
             this.pcbThree.MaximumSize = new System.Drawing.Size(200, 200);
@@ -84,6 +87,7 @@
             // 
             // pcbFour
             // 
+            this.pcbFour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbFour.Image = ((System.Drawing.Image)(resources.GetObject("pcbFour.Image")));
             this.pcbFour.Location = new System.Drawing.Point(0, 200);
             this.pcbFour.MaximumSize = new System.Drawing.Size(200, 200);
@@ -95,6 +99,7 @@
             // 
             // pcbFive
             // 
+            this.pcbFive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbFive.Image = ((System.Drawing.Image)(resources.GetObject("pcbFive.Image")));
             this.pcbFive.Location = new System.Drawing.Point(200, 200);
             this.pcbFive.MaximumSize = new System.Drawing.Size(200, 200);
@@ -106,6 +111,7 @@
             // 
             // pcbSix
             // 
+            this.pcbSix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbSix.Image = ((System.Drawing.Image)(resources.GetObject("pcbSix.Image")));
             this.pcbSix.Location = new System.Drawing.Point(400, 200);
             this.pcbSix.MaximumSize = new System.Drawing.Size(200, 200);
@@ -117,6 +123,7 @@
             // 
             // pcbSeven
             // 
+            this.pcbSeven.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbSeven.Image = ((System.Drawing.Image)(resources.GetObject("pcbSeven.Image")));
             this.pcbSeven.Location = new System.Drawing.Point(0, 400);
             this.pcbSeven.MaximumSize = new System.Drawing.Size(200, 200);
@@ -128,6 +135,7 @@
             // 
             // pcbEight
             // 
+            this.pcbEight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbEight.Image = ((System.Drawing.Image)(resources.GetObject("pcbEight.Image")));
             this.pcbEight.Location = new System.Drawing.Point(200, 400);
             this.pcbEight.MaximumSize = new System.Drawing.Size(200, 200);
@@ -139,6 +147,7 @@
             // 
             // pcbNine
             // 
+            this.pcbNine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcbNine.Image = ((System.Drawing.Image)(resources.GetObject("pcbNine.Image")));
             this.pcbNine.Location = new System.Drawing.Point(400, 400);
             this.pcbNine.MaximumSize = new System.Drawing.Size(200, 200);
@@ -168,6 +177,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Noughts And Crosses";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbThree)).EndInit();

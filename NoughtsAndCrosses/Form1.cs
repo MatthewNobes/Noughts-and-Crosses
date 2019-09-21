@@ -13,25 +13,32 @@ namespace NoughtsAndCrosses
     public partial class MainForm : Form
     {
         public bool turnTimer = false;
+        public bool winIsLost = false;
+        public bool oneFull = false;
 
         public MainForm()
         {
             InitializeComponent();
+
+
             
         }
 
         private void PcbOne_Click(object sender, EventArgs e)
         {
-            
-            if (turnTimer ==false)
+            if (oneFull == false)
             {
-                pcbOne.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbOne.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbOne.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbOne.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                oneFull = true; 
             }
 
         }
@@ -136,6 +143,7 @@ namespace NoughtsAndCrosses
 
         private void PcbNine_Click(object sender, EventArgs e)
         {
+
             if (turnTimer == false)
             {
                 pcbNine.Image = Properties.Resources.cross;
@@ -146,6 +154,17 @@ namespace NoughtsAndCrosses
                 pcbNine.Image = Properties.Resources.Nought;
                 turnTimer = false;
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            //while (winIsLost == false)
+            //{
+              //  if (pcbOne.Image == Properties.Resources.cross)
+                //{
+                  //  MessageBox.Show("won");
+                //}
+            //}
         }
     }
 }
