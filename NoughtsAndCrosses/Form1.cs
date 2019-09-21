@@ -15,6 +15,14 @@ namespace NoughtsAndCrosses
         public bool turnTimer = false;
         public bool winIsLost = false;
         public bool oneFull = false;
+        public bool twoFull = false;
+        public bool threeFull = false;
+        public bool fourFull = false;
+        public bool fiveFull = false;
+        public bool sixFull = false;
+        public bool sevenFull = false;
+        public bool eightFull = false;
+        public bool nineFull = false;
 
         public MainForm()
         {
@@ -45,114 +53,145 @@ namespace NoughtsAndCrosses
 
         private void PcbTwo_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (twoFull == false)
             {
-                pcbTwo.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbTwo.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbTwo.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbTwo.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                twoFull = true;
             }
         }
 
         private void PcbThree_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (threeFull == false)
             {
-                pcbThree.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbThree.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbThree.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbThree.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                threeFull = true;
             }
         }
 
         private void PcbFour_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (fourFull == false)
             {
-                pcbFour.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbFour.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbFour.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbFour.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                fourFull = true;
             }
         }
 
         private void PcbFive_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (fiveFull == false)
             {
-                pcbFive.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbFive.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbFive.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbFive.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                fiveFull = true;
             }
         }
 
         private void PcbSix_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (sixFull == false)
             {
-                pcbSix.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbSix.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbSix.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbSix.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                sixFull = true;
             }
         }
 
         private void PcbSeven_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (sevenFull == false)
             {
-                pcbSeven.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbSeven.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbSeven.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbSeven.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                sevenFull = true;
             }
         }
 
         private void PcbEight_Click(object sender, EventArgs e)
         {
-            if (turnTimer == false)
+            if (eightFull == false)
             {
-                pcbEight.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbEight.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbEight.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbEight.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                eightFull = true;
             }
         }
 
         private void PcbNine_Click(object sender, EventArgs e)
         {
-
-            if (turnTimer == false)
+            if (nineFull == false)
             {
-                pcbNine.Image = Properties.Resources.cross;
-                turnTimer = true;
-            }
-            else
-            {
-                pcbNine.Image = Properties.Resources.Nought;
-                turnTimer = false;
+                if (turnTimer == false)
+                {
+                    pcbNine.Image = Properties.Resources.cross;
+                    turnTimer = true;
+                }
+                else
+                {
+                    pcbNine.Image = Properties.Resources.Nought;
+                    turnTimer = false;
+                }
+                nineFull = true;
             }
         }
 
