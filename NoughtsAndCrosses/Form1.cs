@@ -13,7 +13,9 @@ namespace NoughtsAndCrosses
     public partial class MainForm : Form
     {
         public bool turnTimer = false;
+
         public bool winIsLost = false;
+
         public bool oneFull = false;
         public bool twoFull = false;
         public bool threeFull = false;
@@ -23,6 +25,10 @@ namespace NoughtsAndCrosses
         public bool sevenFull = false;
         public bool eightFull = false;
         public bool nineFull = false;
+
+        public string one;
+        public string two;
+        public string three; 
 
         public MainForm()
         {
@@ -40,13 +46,16 @@ namespace NoughtsAndCrosses
                 {
                     pcbOne.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
                     pcbOne.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    one = "n";
                 }
-                oneFull = true; 
+                oneFull = true;
+                isWinMet();
             }
 
         }
@@ -59,6 +68,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbTwo.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    two = "c";
                 }
                 else
                 {
@@ -67,6 +77,7 @@ namespace NoughtsAndCrosses
                 }
                 twoFull = true;
             }
+            isWinMet();
         }
 
         private void PcbThree_Click(object sender, EventArgs e)
@@ -77,6 +88,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbThree.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    three = "c";
                 }
                 else
                 {
@@ -85,6 +97,7 @@ namespace NoughtsAndCrosses
                 }
                 threeFull = true;
             }
+            isWinMet();
         }
 
         private void PcbFour_Click(object sender, EventArgs e)
@@ -95,6 +108,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbFour.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
@@ -113,6 +127,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbFive.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
@@ -131,6 +146,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbSix.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
@@ -167,6 +183,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbEight.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
@@ -185,6 +202,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbNine.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    one = "c";
                 }
                 else
                 {
@@ -197,13 +215,16 @@ namespace NoughtsAndCrosses
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            //while (winIsLost == false)
-            //{
-              //  if (pcbOne.Image == Properties.Resources.cross)
-                //{
-                  //  MessageBox.Show("won");
-                //}
-            //}
+
+        }
+
+        public void isWinMet()
+        {
+            
+            if (one =="c" && two =="c" && three== "c")
+            {
+                MessageBox.Show("won");
+            }
         }
     }
 }
