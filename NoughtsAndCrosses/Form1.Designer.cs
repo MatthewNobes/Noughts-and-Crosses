@@ -177,7 +177,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Noughts And Crosses";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbOne)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbTwo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbThree)).EndInit();

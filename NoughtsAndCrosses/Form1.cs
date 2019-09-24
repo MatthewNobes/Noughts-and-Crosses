@@ -28,7 +28,13 @@ namespace NoughtsAndCrosses
 
         public string one;
         public string two;
-        public string three; 
+        public string three;
+        public string four;
+        public string five;
+        public string six;
+        public string seven;
+        public string eight;
+        public string nine;
 
         public MainForm()
         {
@@ -74,6 +80,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbTwo.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    two = "n";
                 }
                 twoFull = true;
             }
@@ -94,6 +101,7 @@ namespace NoughtsAndCrosses
                 {
                     pcbThree.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    three = "n";
                 }
                 threeFull = true;
             }
@@ -108,12 +116,13 @@ namespace NoughtsAndCrosses
                 {
                     pcbFour.Image = Properties.Resources.cross;
                     turnTimer = true;
-                    one = "c";
+                    four = "c";
                 }
                 else
                 {
                     pcbFour.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    four = "n";
                 }
                 fourFull = true;
             }
@@ -127,12 +136,13 @@ namespace NoughtsAndCrosses
                 {
                     pcbFive.Image = Properties.Resources.cross;
                     turnTimer = true;
-                    one = "c";
+                    five = "c";
                 }
                 else
                 {
                     pcbFive.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    five = "n";
                 }
                 fiveFull = true;
             }
@@ -146,12 +156,13 @@ namespace NoughtsAndCrosses
                 {
                     pcbSix.Image = Properties.Resources.cross;
                     turnTimer = true;
-                    one = "c";
+                    six = "c";
                 }
                 else
                 {
                     pcbSix.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    six = "n";
                 }
                 sixFull = true;
             }
@@ -165,11 +176,13 @@ namespace NoughtsAndCrosses
                 {
                     pcbSeven.Image = Properties.Resources.cross;
                     turnTimer = true;
+                    seven = "c";
                 }
                 else
                 {
                     pcbSeven.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    seven = "n";
                 }
                 sevenFull = true;
             }
@@ -183,12 +196,13 @@ namespace NoughtsAndCrosses
                 {
                     pcbEight.Image = Properties.Resources.cross;
                     turnTimer = true;
-                    one = "c";
+                    eight = "c";
                 }
                 else
                 {
                     pcbEight.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    eight = "n";
                 }
                 eightFull = true;
             }
@@ -202,28 +216,24 @@ namespace NoughtsAndCrosses
                 {
                     pcbNine.Image = Properties.Resources.cross;
                     turnTimer = true;
-                    one = "c";
+                    nine = "c";
                 }
                 else
                 {
                     pcbNine.Image = Properties.Resources.Nought;
                     turnTimer = false;
+                    nine = "n";
                 }
                 nineFull = true;
             }
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         public void isWinMet()
         {
             
-            if (one =="c" && two =="c" && three== "c")
+            if ((one =="c" && two =="c" && three== "c") | (one == "c" && five == "c" && nine == "c"))
             {
-                MessageBox.Show("won");
+                MessageBox.Show("Crosses win");
             }
         }
     }
