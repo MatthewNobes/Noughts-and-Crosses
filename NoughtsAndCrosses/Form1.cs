@@ -15,11 +15,31 @@ namespace NoughtsAndCrosses
         public MainForm()
         {
             InitializeComponent();
+            
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
+        public static class Globals
         {
+            // global int
+            public static bool team;
+            public static String FILE_NAME = "Output.txt";
 
         }
+
+        private void pic5_Click(object sender, EventArgs e)
+        {
+            
+            if (Globals.team == true)
+            {
+                pic5.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic5.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+       
     }
 }
