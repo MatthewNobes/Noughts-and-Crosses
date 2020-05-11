@@ -28,152 +28,179 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pic5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.pcbOne = new System.Windows.Forms.PictureBox();
+            this.pcbTwo = new System.Windows.Forms.PictureBox();
+            this.pcbThree = new System.Windows.Forms.PictureBox();
+            this.pcbFour = new System.Windows.Forms.PictureBox();
+            this.pcbFive = new System.Windows.Forms.PictureBox();
+            this.pcbSix = new System.Windows.Forms.PictureBox();
+            this.pcbSeven = new System.Windows.Forms.PictureBox();
+            this.pcbEight = new System.Windows.Forms.PictureBox();
+            this.pcbNine = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbThree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSix)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSeven)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNine)).BeginInit();
             this.SuspendLayout();
             // 
-            // pic5
+            // pcbOne
             // 
-            this.pic5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pic5.Location = new System.Drawing.Point(496, 320);
-            this.pic5.Name = "pic5";
-            this.pic5.Size = new System.Drawing.Size(472, 296);
-            this.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic5.TabIndex = 2;
-            this.pic5.TabStop = false;
-            this.pic5.Click += new System.EventHandler(this.pic5_Click);
+            this.pcbOne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbOne.Image = global::NoughtsAndCrosses.Properties.Resources.cover;
+            this.pcbOne.Location = new System.Drawing.Point(0, 0);
+            this.pcbOne.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbOne.Name = "pcbOne";
+            this.pcbOne.Size = new System.Drawing.Size(200, 200);
+            this.pcbOne.TabIndex = 0;
+            this.pcbOne.TabStop = false;
+            this.pcbOne.Click += new System.EventHandler(this.PcbOne_Click);
             // 
-            // pictureBox1
+            // pcbTwo
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
+            this.pcbTwo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbTwo.Image = ((System.Drawing.Image)(resources.GetObject("pcbTwo.Image")));
+            this.pcbTwo.Location = new System.Drawing.Point(200, 0);
+            this.pcbTwo.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbTwo.Name = "pcbTwo";
+            this.pcbTwo.Size = new System.Drawing.Size(200, 200);
+            this.pcbTwo.TabIndex = 1;
+            this.pcbTwo.TabStop = false;
+            this.pcbTwo.Click += new System.EventHandler(this.PcbTwo_Click);
             // 
-            // pictureBox2
+            // pcbThree
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox2.Location = new System.Drawing.Point(496, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.pcbThree.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbThree.Image = ((System.Drawing.Image)(resources.GetObject("pcbThree.Image")));
+            this.pcbThree.Location = new System.Drawing.Point(400, 0);
+            this.pcbThree.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbThree.Name = "pcbThree";
+            this.pcbThree.Size = new System.Drawing.Size(200, 200);
+            this.pcbThree.TabIndex = 2;
+            this.pcbThree.TabStop = false;
+            this.pcbThree.Click += new System.EventHandler(this.PcbThree_Click);
             // 
-            // pictureBox3
+            // pcbFour
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox3.Location = new System.Drawing.Point(980, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.pcbFour.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbFour.Image = ((System.Drawing.Image)(resources.GetObject("pcbFour.Image")));
+            this.pcbFour.Location = new System.Drawing.Point(0, 200);
+            this.pcbFour.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbFour.Name = "pcbFour";
+            this.pcbFour.Size = new System.Drawing.Size(200, 200);
+            this.pcbFour.TabIndex = 3;
+            this.pcbFour.TabStop = false;
+            this.pcbFour.Click += new System.EventHandler(this.PcbFour_Click);
             // 
-            // pictureBox4
+            // pcbFive
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 320);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
+            this.pcbFive.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbFive.Image = ((System.Drawing.Image)(resources.GetObject("pcbFive.Image")));
+            this.pcbFive.Location = new System.Drawing.Point(200, 200);
+            this.pcbFive.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbFive.Name = "pcbFive";
+            this.pcbFive.Size = new System.Drawing.Size(200, 200);
+            this.pcbFive.TabIndex = 4;
+            this.pcbFive.TabStop = false;
+            this.pcbFive.Click += new System.EventHandler(this.PcbFive_Click);
             // 
-            // pictureBox5
+            // pcbSix
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox5.Location = new System.Drawing.Point(980, 320);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
+            this.pcbSix.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbSix.Image = ((System.Drawing.Image)(resources.GetObject("pcbSix.Image")));
+            this.pcbSix.Location = new System.Drawing.Point(400, 200);
+            this.pcbSix.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbSix.Name = "pcbSix";
+            this.pcbSix.Size = new System.Drawing.Size(200, 200);
+            this.pcbSix.TabIndex = 5;
+            this.pcbSix.TabStop = false;
+            this.pcbSix.Click += new System.EventHandler(this.PcbSix_Click);
             // 
-            // pictureBox6
+            // pcbSeven
             // 
-            this.pictureBox6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox6.Location = new System.Drawing.Point(980, 628);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox6.TabIndex = 8;
-            this.pictureBox6.TabStop = false;
+            this.pcbSeven.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbSeven.Image = ((System.Drawing.Image)(resources.GetObject("pcbSeven.Image")));
+            this.pcbSeven.Location = new System.Drawing.Point(0, 400);
+            this.pcbSeven.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbSeven.Name = "pcbSeven";
+            this.pcbSeven.Size = new System.Drawing.Size(200, 200);
+            this.pcbSeven.TabIndex = 6;
+            this.pcbSeven.TabStop = false;
+            this.pcbSeven.Click += new System.EventHandler(this.PcbSeven_Click);
             // 
-            // pictureBox7
+            // pcbEight
             // 
-            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox7.Location = new System.Drawing.Point(496, 628);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox7.TabIndex = 9;
-            this.pictureBox7.TabStop = false;
+            this.pcbEight.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbEight.Image = ((System.Drawing.Image)(resources.GetObject("pcbEight.Image")));
+            this.pcbEight.Location = new System.Drawing.Point(200, 400);
+            this.pcbEight.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbEight.Name = "pcbEight";
+            this.pcbEight.Size = new System.Drawing.Size(200, 200);
+            this.pcbEight.TabIndex = 7;
+            this.pcbEight.TabStop = false;
+            this.pcbEight.Click += new System.EventHandler(this.PcbEight_Click);
             // 
-            // pictureBox8
+            // pcbNine
             // 
-            this.pictureBox8.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 628);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(472, 296);
-            this.pictureBox8.TabIndex = 10;
-            this.pictureBox8.TabStop = false;
+            this.pcbNine.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcbNine.Image = ((System.Drawing.Image)(resources.GetObject("pcbNine.Image")));
+            this.pcbNine.Location = new System.Drawing.Point(400, 400);
+            this.pcbNine.MaximumSize = new System.Drawing.Size(200, 200);
+            this.pcbNine.Name = "pcbNine";
+            this.pcbNine.Size = new System.Drawing.Size(200, 200);
+            this.pcbNine.TabIndex = 8;
+            this.pcbNine.TabStop = false;
+            this.pcbNine.Click += new System.EventHandler(this.PcbNine_Click);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1466, 934);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pic5);
+            this.BackgroundImage = global::NoughtsAndCrosses.Properties.Resources.noughts;
+            this.ClientSize = new System.Drawing.Size(600, 600);
+            this.Controls.Add(this.pcbNine);
+            this.Controls.Add(this.pcbEight);
+            this.Controls.Add(this.pcbSeven);
+            this.Controls.Add(this.pcbSix);
+            this.Controls.Add(this.pcbFive);
+            this.Controls.Add(this.pcbFour);
+            this.Controls.Add(this.pcbThree);
+            this.Controls.Add(this.pcbTwo);
+            this.Controls.Add(this.pcbOne);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainForm";
             this.Text = "Noughts And Crosses";
-            ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbThree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbFive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSix)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSeven)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbNine)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pic5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
+
+        private System.Windows.Forms.PictureBox pcbOne;
+        private System.Windows.Forms.PictureBox pcbTwo;
+        private System.Windows.Forms.PictureBox pcbThree;
+        private System.Windows.Forms.PictureBox pcbFour;
+        private System.Windows.Forms.PictureBox pcbFive;
+        private System.Windows.Forms.PictureBox pcbSix;
+        private System.Windows.Forms.PictureBox pcbSeven;
+        private System.Windows.Forms.PictureBox pcbEight;
+        private System.Windows.Forms.PictureBox pcbNine;
     }
 }
 

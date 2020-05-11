@@ -76,6 +76,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Shader1.dgsl" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -84,10 +85,16 @@
     <None Include="Resources\NoughtsAndCrosses.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.jpg" />
+    <None Include="Resources\noughts.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Nought.jpg" />
+    <None Include="Resources\cover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cross.jpg" />
+    <None Include="Resources\Nought1.jpg" />
+    <None Include="Resources\cross1.jpg" />
+    <Content Include="Resources\Nought.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
