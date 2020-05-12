@@ -39,64 +39,55 @@ namespace Noughts_and_Crosses
 
         private void pic1_Click_1(object sender, EventArgs e)
         {
-            int val = change(1, Globals.one);
-            Globals.one = val;
+            Globals.one = change(1, Globals.one);
             checkwin();
         }
 
         private void pic2_Click_1(object sender, EventArgs e)
         {
-            int val = change(2, Globals.two);
-            Globals.two = val;
+            Globals.two = change(2, Globals.two);
             checkwin();
         }
 
         private void pic3_Click_1(object sender, EventArgs e)
         {
-            int val = change(3, Globals.three);
-            Globals.three = val;
+            Globals.three = change(3, Globals.three);
             checkwin();
         }
 
         private void pic4_Click_1(object sender, EventArgs e)
         {
-            int val = change(4, Globals.four);
-            Globals.four = val;
+            Globals.four = change(4, Globals.four);
             checkwin();
         }
 
         private void pic5_Click_1(object sender, EventArgs e)
         {
-            int val = change(5, Globals.five);
-            Globals.five = val;
+            Globals.five = change(5, Globals.five);
             checkwin();
         }
 
         private void pic6_Click_1(object sender, EventArgs e)
         {
-            int val = change(6, Globals.six);
-            Globals.six = val;
+            Globals.six = change(6, Globals.six);
             checkwin();
         }
 
         private void pic7_Click_1(object sender, EventArgs e)
         {
-            int val = change(7, Globals.seven);
-            Globals.seven = val;
+            Globals.seven = change(7, Globals.seven);
             checkwin();
         }
 
         private void pic8_Click_1(object sender, EventArgs e)
         {
-            int val = change(8, Globals.eight);
-            Globals.eight = val;
+            Globals.eight = change(8, Globals.eight);
             checkwin();
         }
 
         private void pic9_Click_1(object sender, EventArgs e)
         {
-            int val = change(9, Globals.nine);
-            Globals.nine = val;
+            Globals.nine = change(9, Globals.nine);
             checkwin();
         }
 
@@ -124,115 +115,42 @@ namespace Noughts_and_Crosses
         {
             if (value == 0)
             {
+                //Its crosses by default and uses the IF to change to noughts if needed
+                Image toUse = Properties.Resources.cross;
+                value = 2;
+                if (Globals.team == true)
+                {
+                    toUse = Properties.Resources.Nought;
+                    value = 1;
+                }
                 switch (square)
                 {
                     case 1:
-                        if (Globals.team == true)
-                        {
-                            pic1.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic1.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic1.Image = toUse;
                         break;
                     case 2:
-                        if (Globals.team == true)
-                        {
-                            pic2.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic2.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic2.Image = toUse;
                         break;
                     case 3:
-                        if (Globals.team == true)
-                        {
-                            pic3.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic3.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic3.Image = toUse;
                         break;
                     case 4:
-                        if (Globals.team == true)
-                        {
-                            pic4.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic4.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic4.Image = toUse;
                         break;
                     case 5:
-                        if (Globals.team == true)
-                        {
-                            pic5.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic5.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic5.Image = toUse;
                         break;
                     case 6:
-                        if (Globals.team == true)
-                        {
-                            pic6.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic6.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic6.Image = toUse;
                         break;
                     case 7:
-                        if (Globals.team == true)
-                        {
-                            pic7.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic7.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic7.Image = toUse;
                         break;
                     case 8:
-                        if (Globals.team == true)
-                        {
-                            pic8.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic8.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic8.Image = toUse;
                         break;
                     case 9:
-                        if (Globals.team == true)
-                        {
-                            pic9.Image = Properties.Resources.Nought;
-                            value = 1;
-                        }
-                        else
-                        {
-                            pic9.Image = Properties.Resources.cross;
-                            value = 2;
-                        }
+                        pic9.Image = toUse;
                         break;
                 }   
             Globals.team = !Globals.team;
