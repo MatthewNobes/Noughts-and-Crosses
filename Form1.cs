@@ -17,180 +17,137 @@ namespace Noughts_and_Crosses
             InitializeComponent();
         }
 
-        public partial class MainForm : Form
+        public static class Globals
         {
-            public bool turnTimer = false;
+            // global int
+            public static bool team;
+        }
 
-            public bool winIsLost = false;
-
-            public bool oneFull = false;
-            public bool twoFull = false;
-            public bool threeFull = false;
-            public bool fourFull = false;
-            public bool fiveFull = false;
-            public bool sixFull = false;
-            public bool sevenFull = false;
-            public bool eightFull = false;
-            public bool nineFull = false;
-
-            public string one;
-            public string two;
-            public string three;
-            public string four;
-            public string five;
-            public string six;
-            public string seven;
-            public string eight;
-            public string nine;
-
-            public MainForm()
+        private void pic1_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
             {
-                InitializeComponent();
-
-
-
+                pic1.Image = Properties.Resources.Nought;
+                Globals.team = false;
             }
-
-
-            public static class Globals
+            else
             {
-                // global int
-                public static bool team;
-            }
-
-            private void pic5_Click(object sender, EventArgs e)
-            {
-
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic1_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic2_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic3_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic4_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic6_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic7_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic8_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
-            }
-
-            private void pic9_Click(object sender, EventArgs e)
-            {
-                if (Globals.team == true)
-                {
-                    pic5.Image = Properties.Resources.Nought;
-                    Globals.team = false;
-                }
-                else
-                {
-                    pic5.Image = Properties.Resources.cross;
-                    Globals.team = true;
-                }
+                pic1.Image = Properties.Resources.cross;
+                Globals.team = true;
             }
         }
 
-        private void pic1_Click(object sender, EventArgs e)
+        private void pic2_Click_1(object sender, EventArgs e)
         {
+            if (Globals.team == true)
+            {
+                pic2.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic2.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
 
+        private void pic3_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic3.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic3.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic4_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic4.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic4.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic5_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic5.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic5.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic6_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic6.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic6.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic7_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic7.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic7.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic8_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic8.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic8.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
+        }
+
+        private void pic9_Click_1(object sender, EventArgs e)
+        {
+            if (Globals.team == true)
+            {
+                pic9.Image = Properties.Resources.Nought;
+                Globals.team = false;
+            }
+            else
+            {
+                pic9.Image = Properties.Resources.cross;
+                Globals.team = true;
+            }
         }
     }
+}
 
-}
-}

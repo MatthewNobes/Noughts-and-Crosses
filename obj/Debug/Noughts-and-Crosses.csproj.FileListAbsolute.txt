@@ -1,0 +1,10 @@
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\bin\Debug\Noughts-and-Crosses.exe.config
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\bin\Debug\Noughts-and-Crosses.exe
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\bin\Debug\Noughts-and-Crosses.pdb
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts-and-Crosses.csprojAssemblyReference.cache
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts_and_Crosses.Form1.resources
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts_and_Crosses.Properties.Resources.resources
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts-and-Crosses.csproj.GenerateResource.cache
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts-and-Crosses.csproj.CoreCompileInputs.cache
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts-and-Crosses.exe
+\\DAEDALUS-SERVER\Files\CodingProjects\C#\Noughts-and-Crosses\obj\Debug\Noughts-and-Crosses.pdb
