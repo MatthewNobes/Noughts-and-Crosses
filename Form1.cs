@@ -39,58 +39,40 @@ namespace Noughts_and_Crosses
 
         private void pic1_Click_1(object sender, EventArgs e)
         {
-            Globals.one = change(1, Globals.one);
-            checkwin();
+            change(1, Globals.one);
         }
-
         private void pic2_Click_1(object sender, EventArgs e)
         {
-            Globals.two = change(2, Globals.two);
-            checkwin();
+            change(2, Globals.two);
         }
-
         private void pic3_Click_1(object sender, EventArgs e)
         {
-            Globals.three = change(3, Globals.three);
-            checkwin();
+            change(3, Globals.three);
         }
-
         private void pic4_Click_1(object sender, EventArgs e)
         {
-            Globals.four = change(4, Globals.four);
-            checkwin();
+            change(4, Globals.four);
         }
-
         private void pic5_Click_1(object sender, EventArgs e)
         {
-            Globals.five = change(5, Globals.five);
-            checkwin();
+            change(5, Globals.five);
         }
-
         private void pic6_Click_1(object sender, EventArgs e)
         {
-            Globals.six = change(6, Globals.six);
-            checkwin();
+            change(6, Globals.six);
         }
-
         private void pic7_Click_1(object sender, EventArgs e)
         {
-            Globals.seven = change(7, Globals.seven);
-            checkwin();
+            change(7, Globals.seven);
         }
-
         private void pic8_Click_1(object sender, EventArgs e)
         {
-            Globals.eight = change(8, Globals.eight);
-            checkwin();
+            change(8, Globals.eight);
         }
-
         private void pic9_Click_1(object sender, EventArgs e)
         {
-            Globals.nine = change(9, Globals.nine);
-            checkwin();
+            change(9, Globals.nine);
         }
-
         public void checkwin()
         {
             //All win conditions for X.
@@ -109,9 +91,7 @@ namespace Noughts_and_Crosses
                 MessageBox.Show("O Win");
             }
         }
-
-        //value replaces the global variable
-        public int change(int square, int value)
+        public void change(int square, int value)
         {
             if (value == 0)
             {
@@ -127,36 +107,44 @@ namespace Noughts_and_Crosses
                 {
                     case 1:
                         pic1.Image = toUse;
+                        Globals.one = value;
                         break;
                     case 2:
                         pic2.Image = toUse;
+                        Globals.two = value;
                         break;
                     case 3:
                         pic3.Image = toUse;
+                        Globals.three = value;
                         break;
                     case 4:
                         pic4.Image = toUse;
+                        Globals.four = value;
                         break;
                     case 5:
                         pic5.Image = toUse;
+                        Globals.five = value;
                         break;
                     case 6:
                         pic6.Image = toUse;
+                        Globals.six = value;
                         break;
                     case 7:
                         pic7.Image = toUse;
+                        Globals.seven = value;
                         break;
                     case 8:
                         pic8.Image = toUse;
+                        Globals.eight = value;
                         break;
                     case 9:
                         pic9.Image = toUse;
+                        Globals.nine = value;
                         break;
-                }   
-            Globals.team = !Globals.team;
+                } 
+                Globals.team = !Globals.team;
             }
-            return value;
+            checkwin();
         }
     }
 }
-
